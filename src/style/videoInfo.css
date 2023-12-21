@@ -1,0 +1,79 @@
+.videoInfo {
+  display: flex;
+  margin-left: 1.5rem;
+  width: 65vw;
+  max-width: 50rem;
+  justify-content: space-between;
+}
+
+.info-left {
+  display: flex;
+  margin-right: 2.5rem;
+}
+.info-right {
+  display: flex;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-style: none;
+  height: 2.5rem;
+  background-color: rgb(42, 41, 41);
+  color: white;
+  cursor: pointer;
+}
+.subscribers {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.subscribe {
+  margin-left: 2rem;
+}
+
+button.subscribe {
+  background-color: white;
+  color: black;
+}
+
+.like {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  border-right-style: solid;
+  padding: 0.4rem 1rem;
+}
+
+.dislike {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0.4rem 1rem;
+}
+
+.share {
+  margin-left: 1rem;
+  display: flex;
+  width: 7rem;
+  align-items: center;
+  font-size: 1rem;
+}
+.like-icon,
+.dislike-icon,
+.share-icon {
+  font-size: 1.5rem;
+}
+
+.share-icon {
+  margin-right: 0.4rem;
+}
