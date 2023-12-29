@@ -21,6 +21,8 @@
 
 .video-card h1 {
   font-size: 1rem;
+  text-wrap: pretty;
+  width: 12rem;
 }
 
 .video-card p {
