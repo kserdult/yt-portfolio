@@ -5,7 +5,7 @@ import { RiShareForwardLine } from "react-icons/ri";
 
 import "../style/videoInfo.css";
 
-const VideoInfo = () => {
+const VideoInfo = ({ project }) => {
   return (
     <div>
       <div className="videoInfo">
@@ -15,7 +15,16 @@ const VideoInfo = () => {
             <div>Serdült Károly</div>
             <div className="subscribers">Customer Service Agent</div>
           </div>
-          <button className="subscribe">Subscribe</button>
+          <button
+            className="subscribe"
+            onClick={() =>
+              project.sourceCode !== ""
+                ? window.open(project.sourceCode, "_blank")
+                : ""
+            }
+          >
+            Source Code
+          </button>
         </div>
         <div className="info-right">
           <button className="like">
@@ -24,8 +33,13 @@ const VideoInfo = () => {
           <button className="dislike">
             <AiOutlineDislike className="dislike-icon" />
           </button>
-          <button className="share">
-            <RiShareForwardLine className="share-icon" /> Share
+          <button
+            className="share"
+            onClick={() =>
+              project.link !== "" ? window.open(project.link, "_blank") : ""
+            }
+          >
+            <RiShareForwardLine className="share-icon" /> Open
           </button>
         </div>
       </div>

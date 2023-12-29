@@ -1,9 +1,7 @@
 .videoInfo {
   display: flex;
-  margin-left: 1.5rem;
-  width: 65vw;
-  max-width: 50rem;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .info-left {
@@ -35,6 +33,7 @@ button {
   margin-top: 0.2rem;
   font-size: 0.8rem;
   font-weight: 100;
+  color: rgb(178, 178, 178);
 }
 
 .subscribe {
@@ -76,4 +75,14 @@ button.subscribe {
 
 .share-icon {
   margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .videoInfo {
+    flex-direction: column;
+    margin-left: 0.2rem;
+  }
+  .info-right {
+    margin-top: 1rem;
+  }
 }

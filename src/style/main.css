@@ -1,0 +1,39 @@
+.main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  width: 65vw;
+  max-width: 60rem;
+  margin-right: 1rem;
+  margin-left: 5vw;
+}
+
+.main-right {
+  width: 27rem;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1015px) {
+  .main-right {
+    display: none;
+  }
+  .main-left {
+    width: 100vw;
+    margin-right: 5vw;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .small-sidevideos {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-left {
+    width: 100vw;
+    margin: 0;
+  }
+}

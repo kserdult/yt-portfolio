@@ -15,7 +15,7 @@ const Navbar = () => {
         <span>Portfolio</span>
       </div>
       <div className="nav-mid">
-        Search
+        Welcome To My Portfolio!
         <CiSearch className="icon" />
       </div>
       <div className="nav-right">

@@ -1,14 +1,39 @@
-.mainvideo {
-  width: 65vw;
-  margin-left: 1.5rem;
-  margin-top: 5rem;
-}
 .video {
   width: 100%;
-  max-width: 50rem;
+  height: 32vw;
+  max-height: 33.5rem;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 h1 {
   margin: 0.5rem 0;
   font-size: 1.3rem;
+}
+
+.description {
+  background-color: rgb(32, 32, 32);
+  border-radius: 1rem;
+}
+
+.shrt {
+  cursor: pointer;
+}
+
+.description button {
+  background-color: transparent;
+}
+
+.mainvideo p {
+  padding: 0.8rem;
+}
+
+@media screen and (max-width: 1015px) {
+  .video {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+  }
 }

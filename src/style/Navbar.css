@@ -31,6 +31,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-style: solid;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border-color: rgb(67, 67, 67);
 }
 
 .nav-right {
@@ -38,6 +42,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav-mid .icon {
+  margin-left: 1rem;
 }
 
 .icon {
@@ -52,4 +60,10 @@ nav {
 
 .account {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-mid {
+    display: none;
+  }
 }

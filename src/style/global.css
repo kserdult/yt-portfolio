@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
 *,
 *::after,
 *::before {
@@ -11,4 +16,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(17, 17, 17);
   color: white;
+}
+
+pre {
+  font-family: "Roboto", sans-serif;
 }

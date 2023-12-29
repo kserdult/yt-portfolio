@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/MainVideo.css";
 import placeholder from "../assets/placeholder.jpg";
+import Description from "./Description";
+import VideoInfo from "./VideoInfo";
+import { data } from "../assets/projects";
 
-const MainVideo = () => {
+const MainVideo = ({ currProj }) => {
   return (
     <div className="mainvideo">
-      <img src={placeholder} className="video" />
-      <h1>He Got Revenge On s1mple</h1>
+      <img
+        src={data[currProj].image}
+        className="video"
+        alt={data[currProj].title}
+      />
+      <h1>{data[currProj].title}</h1>
+      <VideoInfo project={data[currProj]} />
+      <Description projectText={data[currProj].description} />
     </div>
   );
 };

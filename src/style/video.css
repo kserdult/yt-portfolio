@@ -1,0 +1,28 @@
+.video-card {
+  display: flex;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  text-wrap: pretty;
+}
+.video-card:hover {
+  background-color: rgb(56, 56, 56);
+  border-radius: 1rem;
+}
+.video-card:active {
+  background-color: grey;
+}
+.video-card img {
+  width: 10.5rem;
+  height: 5.9rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.video-card h1 {
+  font-size: 1rem;
+}
+
+.video-card p {
+  font-size: 0.8rem;
+}
